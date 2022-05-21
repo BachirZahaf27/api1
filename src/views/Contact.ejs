@@ -1,0 +1,138 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Climate Change API</title>
+    <!-- BULMA CSS - https://bulma.io/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+  
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation" >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="https://cdn4.iconfinder.com/data/icons/ecology-146/32/ecology-08-512.png" width="30" height="30">
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"  href="https://github.com/BachirZahaf27/ALOS_act4">
+            Github
+          </a>
+          <a class="navbar-item" href="https://bachir-zahaf.gitbook.io/live-climate-change-api/">
+            Documentation
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end" >
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary"  action="/logout?_method=DELETE" method="POST">
+                <strong>Logout</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+  
+  <div class="container is-fluid mt-5">
+    <div class="notification is-primary">
+      <h1 class="title is-1">
+        <span class="icon is-large">
+         <ion-icon size="large" name="earth-outline"></ion-icon>
+        </span>
+        <span>Live Climate Change API</span></h1>
+      <h2 class="title is-4">
+        <span class="icon is-large">
+          <ion-icon size="large" name="ellipdse-outline"></ion-icon>
+         </span>
+         <span>Welcome <%= name %> to my API</span></h1>
+        </h2>
+      <form class="box" action="https://www.facebook.com/bachir.zahaf.39" method="Get">
+        <h2 class="title is-4">facebook :</h2>
+        <button class="button is-link is-rounded">
+          <span class="icon is-large">
+            <ion-icon size="large" name="newspaper-outline"></ion-icon>
+          </span>
+          <span>Check out my facebook</span>
+        </button> 
+        </button> 
+      </form>
+
+      <form class="box">
+        <h2 class="title is-4">Email :</h2>
+        <button href="mailto:zahafmohamedelbachir@gmail.com" class="button is-link is-rounded">
+          <span class="icon is-large">
+            <ion-icon size="large" name="mail-outline"></ion-icon>
+          </span>
+          <span>Send email</span>
+        </button> 
+        </button> 
+      </form>
+  
+      <form class="box" action="https://bachir-zahaf.gitbook.io/live-climate-change-api/" >
+        <h2 class="title is-4">Documentation :</h2>
+        <p class="title is-6">Check out my Documentation that talks about Climate Change API </p>
+        <button class="button is-warning is-rounded">
+          <span class="icon is-large">
+            <ion-icon size="large" name="document-text-outline"></ion-icon>
+          </span>
+          <span>Check out Documentation</span>
+          </button> 
+      </form>
+  
+      <form class="box" action="/logout?_method=DELETE" method="POST">
+        <h2 class="title is-4">Loging out the api :</h2>
+        <button class="button is-danger is-rounded">
+          <span class="icon is-large">
+            <ion-icon size="large" name="log-out-outline"></ion-icon>
+          </span>
+          <span>Log Out</span>
+        </button>
+      </form>
+    </div>
+  
+  </div>
+  
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  </body>
